@@ -1,24 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Text to Video Generator
+
+A lightweight web app that converts text into short videos using the fal.ai Veo 3 model. Built with Next.js and deployed on Vercel.
+
+## Features
+
+- 📝 **Text Input**: Paste your script into a textarea
+- ✂️ **Smart Chunking**: Automatically breaks text into smaller chunks (~500 characters)
+- ✏️ **Inline Editing**: Edit each chunk before generating videos
+- 🎥 **Video Generation**: Uses fal.ai's Veo 3 Fast model to create videos
+- 📊 **Live Progress**: Real-time status updates (Queued → Generating → Done)
+- 🎬 **Built-in Player**: View generated videos directly in the app
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up your fal.ai API key:
+   - Copy `.env.local` and add your API key:
+   ```
+   NEXT_PUBLIC_FAL_KEY=your_fal_ai_api_key_here
+   ```
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
