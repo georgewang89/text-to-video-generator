@@ -174,9 +174,9 @@ export default function Home() {
           <h3 className="font-medium text-blue-900 mb-2">Instructions:</h3>
           <ul className="text-sm text-blue-800 space-y-1">
             <li>1. Paste your script in the textarea above</li>
-            <li>2. Click "Chunk Script" to break it into smaller pieces</li>
+            <li>2. Click &quot;Chunk Script&quot; to break it into smaller pieces</li>
             <li>3. Edit each chunk as needed</li>
-            <li>4. Click "Generate Video" for each chunk</li>
+            <li>4. Click &quot;Generate Video&quot; for each chunk</li>
             <li>5. Watch the progress and view generated videos</li>
           </ul>
         </div>
