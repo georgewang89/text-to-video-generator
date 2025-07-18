@@ -46,7 +46,7 @@ export default function Home() {
     try {
       const result = await generateVideo(
         chunk.text,
-        (update) => {
+        (update: any) => {
           console.log('Queue update:', update);
           setChunks(prevChunks => prevChunks.map(c => 
             c.id === id ? { ...c, status: 'generating' } : c
